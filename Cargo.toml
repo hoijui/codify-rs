@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText: 2022 Robin Vobruba <hoijui.quaero@gmail.com>
+#
+# SPDX-License-Identifier: Unlicense
+
+[package]
+name = "codify"
+version = "0.1.0"
+edition = "2021"
+description = """
+    A Rust library that helps with generating code from 'build.rs'.
+    """
+repository = "https://github.com/hoijui/codify-rs"
+keywords = ["code-generation"]
+categories = ["code-generation"]
+license = "AGPL-3.0-or-later"
+authors = ["Robin Vobruba <hoijui.quaero@gmail.com>"]
+publish = false
