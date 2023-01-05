@@ -37,13 +37,13 @@ pub trait Codify {
 impl Codify for String {
     fn init_code(&self) -> Cow<'static, str> {
         // NOTE: This codifies the String into a &'static str!
-        Cow::Owned(format!(r##""{}""##, self))
+        Cow::Owned(format!(r##""{self}""##))
     }
 }
 
 impl Codify for &str {
     fn init_code(&self) -> Cow<'static, str> {
-        Cow::Owned(format!(r##""{}""##, self))
+        Cow::Owned(format!(r##""{self}""##))
     }
 }
 
