@@ -28,6 +28,14 @@ pub trait Codify {
     fn init_code(&self) -> Cow<'static, str>;
 }
 
+impl<T: Codify> Codify for Option<T> {
+    fn init_code(&self) -> Cow<'static, str> {
+        self.as_ref().map_or(Cow::Borrowed("None"), |val| {
+            Cow::Owned(format!("Some({})", val.init_code()))
+        })
+    }
+}
+
 // impl<T: AsRef<str>> Codify for T {
 //     fn init_code(&self) -> Cow<'static, str> {
 //         Cow::Owned(format!(r##""{}""##, self.as_ref()))
