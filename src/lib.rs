@@ -36,13 +36,20 @@ impl<T: Codify> Codify for Option<T> {
     }
 }
 
-impl<'a, T: Codify + Clone> Codify for Cow<'a, T> {
+impl<'a, T> Codify for Cow<'a, T>
+where
+    T: Clone,
+    for<'b> &'b T: Codify,
+{
     fn init_code(&self) -> Cow<'static, str> {
         self.as_ref().init_code()
     }
 }
 
-impl<T: Codify> Codify for Box<T> {
+impl<T> Codify for Box<T>
+where
+    for<'b> &'b T: Codify,
+{
     fn init_code(&self) -> Cow<'static, str> {
         self.as_ref().init_code()
     }
