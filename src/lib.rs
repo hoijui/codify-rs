@@ -36,6 +36,18 @@ impl<T: Codify> Codify for Option<T> {
     }
 }
 
+impl<'a, T: Codify + Clone> Codify for Cow<'a, T> {
+    fn init_code(&self) -> Cow<'static, str> {
+        self.as_ref().init_code()
+    }
+}
+
+impl<T: Codify> Codify for Box<T> {
+    fn init_code(&self) -> Cow<'static, str> {
+        self.as_ref().init_code()
+    }
+}
+
 // impl<T: AsRef<str>> Codify for T {
 //     fn init_code(&self) -> Cow<'static, str> {
 //         Cow::Owned(format!(r##""{}""##, self.as_ref()))
