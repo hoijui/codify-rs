@@ -4,7 +4,7 @@
 
 [package]
 name = "codify"
-version = "0.4.1"
+version = "0.5.0"
 edition = "2021"
 description = """
     A Rust library that helps with generating code from 'build.rs'.
