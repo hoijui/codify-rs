@@ -22,7 +22,10 @@
 #![allow(clippy::struct_excessive_bools)]
 #![allow(clippy::fn_params_excessive_bools)]
 
-use std::{borrow::Cow, collections::HashMap};
+use std::{
+    borrow::Cow,
+    collections::{HashMap, HashSet},
+};
 
 pub trait Codify {
     fn init_code(&self) -> Cow<'static, str>;
@@ -105,6 +108,25 @@ where
             ));
         }
         parts.push("map\n}}".to_string());
+
+        Cow::Owned(parts.concat())
+    }
+}
+
+impl<E, S: ::std::hash::BuildHasher> Codify for HashSet<E, S>
+where
+    E: Codify,
+{
+    fn init_code(&self) -> Cow<'static, str> {
+        let mut parts = vec!["{{\nlet mut set = HashSet::new();\n".to_string()];
+        for entry in self {
+            parts.push(format!(
+                r##"set.insert({});
+"##,
+                entry.init_code(),
+            ));
+        }
+        parts.push("set\n}}".to_string());
 
         Cow::Owned(parts.concat())
     }
