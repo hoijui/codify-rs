@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "codify"
+name = "codify_hoijui"
 version = "0.5.0"

@@ -1,9 +1,15 @@
-# SPDX-FileCopyrightText: 2022 Robin Vobruba <hoijui.quaero@gmail.com>
+# SPDX-FileCopyrightText: 2022 - 2023 Robin Vobruba <hoijui.quaero@gmail.com>
 #
 # SPDX-License-Identifier: Unlicense
 
 [package]
-name = "codify"
+# NOTE We use the "_hoijui" postfix, because we assume
+#      that this crate will not be of much interest
+#      to the general public.
+#      This allows us to publish it anyway,
+#      without blocking the short name
+#      for a more meaningful crate in the future.
+name = "codify_hoijui"
 version = "0.5.0"
 license = "AGPL-3.0-or-later"
 authors = ["Robin Vobruba <hoijui.quaero@gmail.com>"]
