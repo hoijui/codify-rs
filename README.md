@@ -12,6 +12,9 @@ SPDX-License-Identifier: CC0-1.0
 [![REUSE status](
     https://api.reuse.software/badge/github.com/hoijui/codify-rs)](
     https://api.reuse.software/info/github.com/hoijui/codify-rs)
+[![Git Repo](
+    https://img.shields.io/badge/Repo-GitHub-555555&logo=github.svg)](
+    https://github.com/hoijui/codify-rs)
 [![Package Releases](
     https://img.shields.io/crates/v/codify_hoijui.svg?color=fc8d62&logo=rust)](
     https://crates.io/crates/codify_hoijui)
