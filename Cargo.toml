@@ -5,13 +5,14 @@
 [package]
 name = "codify"
 version = "0.5.0"
-edition = "2021"
+license = "AGPL-3.0-or-later"
+authors = ["Robin Vobruba <hoijui.quaero@gmail.com>"]
 description = """
     A Rust library that helps with generating code from 'build.rs'.
     """
 repository = "https://github.com/hoijui/codify-rs"
+homepage = "https://github.com/hoijui/codify-rs"
 keywords = ["code-generation"]
 categories = ["code-generation"]
-license = "AGPL-3.0-or-later"
-authors = ["Robin Vobruba <hoijui.quaero@gmail.com>"]
-publish = false
+readme = "README.md"
+edition = "2021"
