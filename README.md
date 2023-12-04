@@ -15,6 +15,15 @@ SPDX-License-Identifier: CC0-1.0
 
 Helps in automatic code generation for initializing structs and enums.
 
+The practical use case of this,
+is to store resources/data in the binary in the most efficient form,
+so it will be ready at runtime,
+without having to include the data/files
+in their original, serialized, potentially innefficient form
+into the binary.
+This also means, the data does not have to be parsed
+at runtime/application-startup.
+
 ## Usage
 
 0. Add this library to your normal and build dependencies in cargo:
