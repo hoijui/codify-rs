@@ -10,7 +10,7 @@
 #      without blocking the short name
 #      for a more meaningful crate in the future.
 name = "codify_hoijui"
-version = "0.5.0"
+version = "0.6.0"
 license = "AGPL-3.0-or-later"
 authors = ["Robin Vobruba <hoijui.quaero@gmail.com>"]
 description = """
