@@ -13,7 +13,9 @@ SPDX-License-Identifier: CC0-1.0
     https://api.reuse.software/badge/github.com/hoijui/codify-rs)](
     https://api.reuse.software/info/github.com/hoijui/codify-rs)
 
-Helps in automatic code generation for initializing structs and enums.
+Helps in automatic code generation at compile-time,
+for initializing structs and enums containing data,
+which is to be available at runtime.
 
 The practical use case of this,
 is to store resources/data in the binary in the most efficient form,

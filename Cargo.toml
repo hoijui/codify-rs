@@ -8,7 +8,9 @@ version = "0.5.0"
 license = "AGPL-3.0-or-later"
 authors = ["Robin Vobruba <hoijui.quaero@gmail.com>"]
 description = """
-    A Rust library that helps with generating code from 'build.rs'.
+    Helps in automatic code generation at compile-time,
+    for initializing structs and enums containing data,
+    which is to be available at runtime.
     """
 repository = "https://github.com/hoijui/codify-rs"
 homepage = "https://github.com/hoijui/codify-rs"
