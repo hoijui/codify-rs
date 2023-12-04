@@ -22,6 +22,10 @@ Commonly used like this:
     creating init code, and write that code into a `*.rs` file
 3. load/use that `*.rs` file at compile-time
 
+## Example
+
 For an example usage,
-see the [build.rs](https://github.com/hoijui/osh-dir-std-rs/blob/master/build.rs)
-file of project [osh-dir-std-rs](https://github.com/hoijui/osh-dir-std-rs/).
+see the [build.rs](
+https://github.com/hoijui/osh-dir-std-rs/blob/master/build.rs)
+file of [osh-dir-std-rs](
+https://github.com/hoijui/osh-dir-std-rs/) project.
