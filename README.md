@@ -29,13 +29,15 @@ at runtime/application-startup.
 ## Usage
 
 0. Add this library to your normal and build dependencies in cargo:
-    ```
+
+    ```toml
     [dependencies]
     codify = { version = "0.3", package = "codify_hoijui" }
 
     [build-dependencies]
     codify = { version = "0.3", package = "codify_hoijui" }
     ```
+
 1. in your `build.rs`, load some data from resource files
     into structs/enums, using serde
 2. in your `build.rs`, call `Codify::init_code()` on that data,
