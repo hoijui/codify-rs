@@ -15,12 +15,26 @@ SPDX-License-Identifier: CC0-1.0
 
 Helps in automatic code generation for initializing structs and enums.
 
-Commonly used like this:
+## Usage
 
-1. in your `build.rs`, load some data from resource files into struct, using serde
-2. in your `build.rs`, call the `Codify::init_code()` function on that data,
-    creating init code, and write that code into a `*.rs` file
-3. load/use that `*.rs` file at compile-time
+0. Add this library to your normal and build dependencies in cargo:
+    ```
+    [dependencies]
+    codify = { version = "0.3", package = "codify_hoijui" }
+
+    [build-dependencies]
+    codify = { version = "0.3", package = "codify_hoijui" }
+    ```
+1. in your `build.rs`, load some data from resource files
+    into structs/enums, using serde
+2. in your `build.rs`, call `Codify::init_code()` on that data,
+    creating init code.
+3. write that code into a `$OUT_DIR/my_data_x_gen.rs` file
+4. Create a proxy source file under `src/` -
+    for example `src/my_data_x_gen.rs` -
+    which does nothing more then include the generated file:
+    `include!(concat!(env!("OUT_DIR"), "/my_data_x_gen.rs"));`
+5. load/use `$OUT_DIR/my_data_x.rs` file at compile-time
 
 ## Example
 
