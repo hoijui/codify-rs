@@ -38,10 +38,10 @@ at runtime/application-startup.
 
     ```toml
     [dependencies]
-    codify = { version = "0.3", package = "codify_hoijui" }
+    codify = { version = "0.6", package = "codify_hoijui" }
 
     [build-dependencies]
-    codify = { version = "0.3", package = "codify_hoijui" }
+    codify = { version = "0.6", package = "codify_hoijui" }
     ```
 
 1. in your `build.rs`, load some data from resource files
