@@ -21,6 +21,12 @@ SPDX-License-Identifier: CC0-1.0
 [![Documentation Releases](
     https://img.shields.io/badge/docs.rs-codify_hoijui-66c2a5?labelColor=555555&logo=docs.rs)](
     https://docs.rs/codify_hoijui)
+[![Dependency Status](
+    https://deps.rs/repo/github/hoijui/codify-rs/status.svg)](
+    https://deps.rs/repo/github/hoijui/codify-rs)
+[![Build Status](
+    https://github.com/hoijui/codify-rs/workflows/build/badge.svg)](
+    https://github.com/hoijui/codify-rs/actions)
 
 Helps in automatic code generation at compile-time,
 for initializing structs and enums containing data,
