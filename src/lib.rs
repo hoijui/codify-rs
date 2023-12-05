@@ -110,3 +110,9 @@ where
         Cow::Owned(parts.concat())
     }
 }
+
+// This tests rust code in the README with doc-tests.
+// Though, It will not appear in the generated documentaton.
+#[doc = include_str!("../README.md")]
+#[cfg(doctest)]
+pub struct ReadmeDoctests;
