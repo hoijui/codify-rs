@@ -15,6 +15,9 @@ SPDX-License-Identifier: CC0-1.0
 [![Repo](
     https://img.shields.io/badge/GitHub-green?style=flat&label=Repo)](
     https://github.com/hoijui/codify-rs)
+[![Statistics](
+    https://img.shields.io/badge/Statistics-8946FF?style=flat&label=lib.rs&labelColor=EEEEEE)](
+    https://lib.rs/codify_hoijui)
 [![Package Releases](
     https://img.shields.io/crates/v/codify_hoijui.svg?color=fc8d62&logo=rust)](
     https://crates.io/crates/codify_hoijui)
