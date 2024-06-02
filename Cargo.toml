@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2022 - 2023 Robin Vobruba <hoijui.quaero@gmail.com>
+# SPDX-FileCopyrightText: 2022 - 2024 Robin Vobruba <hoijui.quaero@gmail.com>
 #
 # SPDX-License-Identifier: Unlicense
 
@@ -21,7 +21,7 @@ description = """
 repository = "https://github.com/hoijui/codify-rs"
 homepage = "https://github.com/hoijui/codify-rs"
 keywords = ["code-generation"]
-categories = ["code-generation"]
+categories = ["data-structures", "development-tools::build-utils"]
 readme = "README.md"
 edition = "2021"
 
