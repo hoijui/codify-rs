@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: 2022 - 2023 Robin Vobruba <hoijui.quaero@gmail.com>
+SPDX-FileCopyrightText: 2022 - 2024 Robin Vobruba <hoijui.quaero@gmail.com>
 
 SPDX-License-Identifier: CC0-1.0
 -->
@@ -7,13 +7,13 @@ SPDX-License-Identifier: CC0-1.0
 # codify-rs
 
 [![License: AGPL-3.0-or-later](
-    https://img.shields.io/badge/License-AGPL%203.0+-blue.svg)](
+    https://img.shields.io/badge/License-AGPL--3.0--or--later-blue.svg)](
     LICENSE.txt)
 [![REUSE status](
     https://api.reuse.software/badge/github.com/hoijui/codify-rs)](
     https://api.reuse.software/info/github.com/hoijui/codify-rs)
 [![Repo](
-    https://img.shields.io/badge/Repo-GitHub-555555&logo=github.svg)](
+    https://img.shields.io/badge/GitHub-green?style=flat&label=Repo)](
     https://github.com/hoijui/codify-rs)
 [![Package Releases](
     https://img.shields.io/crates/v/codify_hoijui.svg?color=fc8d62&logo=rust)](
